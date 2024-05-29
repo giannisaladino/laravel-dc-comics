@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +15,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('layouts.app');
+})->name('app');
+
+// COMICS CRUD
+
+    // index
+    Route::get('/comics', [PageController::class,'index'])->name('comics.index');
+
+    // show
+    Route::get('/comics/{comic}', [PageController::class,'show'])->name('comics.show');
