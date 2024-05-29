@@ -17,4 +17,13 @@ class PageController extends Controller
     }
 
     // public function show();
+
+    public function create() {
+
+        return view('comics.create');
+    }
+
+    public function store() {
+        dump('store funziona');
+    }
 }
