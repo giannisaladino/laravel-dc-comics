@@ -25,7 +25,12 @@ class PageController extends Controller
         return view('comics.create');
     }
 
-    public function store() {
-        dump('store funziona');
+    public function store(Request $request) {
+
+        $form_data = $request->all();
+
+        $new_comic = Comic::create($form_data);
+        // dump('store funziona');
+        return to_route('comics.show', $new_comic);
     }
 }
