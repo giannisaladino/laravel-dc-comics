@@ -9,14 +9,16 @@ class PageController extends Controller
 {
     public function index() {
 
-        $comics = config("comics");
+        $comics = Comic::all();
 
-        return view("comics.index", [
-            'comics' => $comics,
-        ]);
+        return view("comics.index", compact("comics"));
     }
 
-    // public function show();
+    public function show(Comic $comic){
+
+        return view('comics.show', compact('comic'));
+
+    }
 
     public function create() {
 

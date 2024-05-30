@@ -26,7 +26,7 @@ Route::get('/', function () {
     Route::get('/comics/create', [PageController::class, 'create'])->name('comics.create');
 
     // show
-    // Route::get('/comics/{comic}', [PageController::class,'show'])->name('comics.show');
+    Route::get('/comics/{comic}', [PageController::class,'show'])->name('comics.show');
 
     Route::post('/comics', [PageController::class, 'store'])->name('comics.store');
 

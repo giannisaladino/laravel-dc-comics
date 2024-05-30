@@ -15,12 +15,12 @@
 
         <div class="mb-3">
           <label for="image" class="form-label">Url Image</label>
-          <input type="email" name="image" class="form-control" id="image" placeholder="http://...">
+          <input type="text" name="image" class="form-control" id="image" placeholder="http://...">
         </div>
 
         <div class="mb-3">
           <label for="title" class="form-label">Titolo</label>
-          <input type="email" name="title" class="form-control" id="title" placeholder="Titolo del fumetto">
+          <input type="text" name="title" class="form-control" id="title" placeholder="Titolo del fumetto">
         </div>
 
         <button class="btn btn-primary">Crea</button>
