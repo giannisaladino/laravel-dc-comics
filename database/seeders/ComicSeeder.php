@@ -20,7 +20,7 @@ class ComicSeeder extends Seeder
             $newComic = new Comic();
             $newComic->title = $faker->text(15);
             $newComic->description = $faker->text(200);
-            $newComic->thumb = $faker->text(200);
+            $newComic->thumb = "https://picsum.photos/200/300?random=".rand(1,100);
             $newComic->price = $faker->randomFloat(2, 10, 99);
             $newComic->series = $faker->text(50);
             $newComic->sale_date = $faker->date();

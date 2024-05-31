@@ -4,7 +4,7 @@
 
 <section>
     <div class="container">
-      <p>pastas.create</p>
+      <!-- <p>comics.create</p> -->
       <h2 class="fs-2">Crea un nuovo fumetto</h2>
     </div>
     <div class="container">

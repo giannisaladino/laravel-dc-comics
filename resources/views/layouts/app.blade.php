@@ -11,19 +11,19 @@
 <body>
 
     <header class="mb-4">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <h1 class="text-center p-2" >COMICS!</h1>
+        <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-
-                <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="justify-content-around collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        <li class="nav-item btn btn-info m-1">
                             <a class="nav-link active" aria-current="page" href=" {{ route('welcome') }} ">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item btn btn-info m-1">
                             <a class="nav-link" href=" {{ route('comics.index') }} ">Fumetti</a>
                         </li>
 
-                        <li class="nav-item">
+                        <li class="nav-item btn btn-info m-1">
                             <a class="nav-link" href=" {{ route('comics.create') }} ">Crea un fumetto</a>
                         </li>
                     </ul>

@@ -21,12 +21,14 @@ Route::get('/', function () {
 // COMICS CRUD
 
     // index
-    Route::get('/comics', [PageController::class,'index'])->name('comics.index');
+    // Route::get('/comics', [PageController::class,'index'])->name('comics.index');
 
-    Route::get('/comics/create', [PageController::class, 'create'])->name('comics.create');
+    // Route::get('/comics/create', [PageController::class, 'create'])->name('comics.create');
 
-    // show
-    Route::get('/comics/{comic}', [PageController::class,'show'])->name('comics.show');
+    // // show
+    // Route::get('/comics/{comic}', [PageController::class,'show'])->name('comics.show');
 
-    Route::post('/comics', [PageController::class, 'store'])->name('comics.store');
+    // Route::post('/comics', [PageController::class, 'store'])->name('comics.store');
+
+    Route::resource('comics', PageController::class);
 
